@@ -43,3 +43,6 @@ gitalk:
   owner: zamberform #Github repo owner
   admin:  #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
     - zamberform
+
+# google_ad_client: 0000000000000000
+# google_ad_slot: 00000

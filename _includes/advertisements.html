@@ -1,0 +1,13 @@
+
+{% if site.google_ad_client and site.google_ad_slot %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Single post - 1 (yourwebsite.com) -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="{{site.google_ad_client}}"
+    data-ad-slot="{{site.google_ad_slot}}"
+    data-ad-format="auto"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{% endif %}
