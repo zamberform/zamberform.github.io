@@ -39,7 +39,7 @@ disqus:
 gitalk:
   clientID: 45d901954f04cc74ce70 #Github Application Client ID
   clientSecret: 1ec7e7946ca50ff0ead500c0fb84736d1777a3ab #Github Application Client Secret
-  repository: https://github.com/zamberform/zamberform.github.io #Github repo
+  repository: zamberform.github.io #Github repo
   owner: zamberform #Github repo owner
   admin:  #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
     - zamberform
