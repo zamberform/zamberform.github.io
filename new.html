@@ -1,0 +1,49 @@
+--- 
+permalink: /
+---
+<div class="main-content index-page clearfix ">
+    <div class="latest-title-container">
+        <div class="latest-title btn btn-outline-info"><a href="{{site.baseurl}}/">最新の１０件</a></div>
+    </div>
+    <div class="post-lists">
+            {% for posts in site.posts limit:10 %}
+            <div class="post-onelist-item">
+                <div class="post-onelist-item-container">
+                    <a href="{{ posts.url | prepend: site.baseurl }}">
+                        <div class="item-title">
+                            <a>{{ posts.title | strip_html | strip_newlines | truncate: 77 }}</a>
+                        </div>
+                    </a>
+                    <div class="item-info">
+                        <div class="item-category">
+                        <a class="btn btn-outline-primary" href="{{site.baseurl}}/tags#{{ posts.category }}" title="{{ posts.category }}" data-hover="{{ posts.category }}">{{ posts.category }}</a>
+                        </div>
+                        <div class="item-readmore">
+                            <a href="{{ posts.url | prepend: site.baseurl }}">{{ posts.date | date: "%F"}}</a>
+                        </div>
+                    </div>
+                    
+                    {% if posts.background-image-home %}
+                    <div class="onelist-item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image-home }}');">
+                    </div>
+                    {% endif %}
+                    
+                    <div class="item-content">
+                        <a href="{{ posts.url | prepend: site.baseurl }}">{{ posts.content | strip_html | strip_newlines | truncate: 77 }}</a>
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+    <div class="post-onelist-item-container">
+        <div class="item-content">
+            <div class="item-category">
+                <a class="btn btn-outline-info" href="{{site.baseurl}}/all">全部のリスト</a>
+            </div>
+        </div>
+    </div>
+</div>

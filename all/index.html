@@ -1,0 +1,34 @@
+---
+permalink: /all
+---
+<div class="main-content index-page clearfix ">
+    <div class="post-lists">
+        <div class="post-lists-body">
+            {% for posts in paginator.posts %}
+            <div class="post-list-item">
+                <div class="post-list-item-container">
+                    <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');">
+                        <div>
+                            <p class="font-weight-bold text-center gradient-text">{{ posts.date | date: "%F"}}</p>
+                        </div>
+                    </div>
+                    <a href="{{ posts.url | prepend: site.baseurl }}">
+                        <div class="item-desc">
+                            <p>{{ posts.content | strip_html | strip_newlines | truncate: 77 }}</p>
+                        </div>
+                    </a>
+                    <div class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
+                    <div class="item-slant"></div>
+                    <div class="item-label">
+                        <div class="item-title"><a href="{{ posts.url | prepend: site.baseurl }}" title="{{ posts.title }}">{{ posts.title }}</a></div>
+                        <div class="item-meta clearfix">
+                            <a class="btn btn-default" href="{{site.baseurl}}/tags#{{ posts.category }}" title="{{ posts.category }}" data-hover="{{ posts.category }}">{{ posts.category }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% include pagination.html %}
+</div>

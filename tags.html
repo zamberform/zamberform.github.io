@@ -1,0 +1,43 @@
+--- 
+---
+<div class="main-content archive-page clearfix">
+    <div>
+        <ul class="list-inline">
+            {% for category in site.categories %}
+            <li><div class="lab-tag"><a href="javascript:;" class="btn btn-default categories-list-item" cate="{{ category | first }}">
+          {{ category | first }} <span class="category-badge">{{ category | last | size }}</span>
+        </a></div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="category-grid-body">
+        {% for category in site.categories %}
+        <div post-cate="{{category | first}}">
+            {% for posts in category %} 
+            {% for post in posts %} 
+            {% if post.url %}
+            <div class="post-list-item">
+                <div class="post-list-item-container">
+                    <div class="item-thumb  bg-{{post.background }}" style="background-image:url('{{post.background-image }}');">
+                        <div>
+                            <p class="font-weight-bold text-center gradient-text">{{ post.date | date: "%F"}}</p>
+                        </div>
+                    </div>
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <div class="item-desc">
+                            <p>{{ post.content | strip_html | strip_newlines | truncate: 77 }}</p>
+                        </div>
+                    </a>
+                    <div class="item-slant reverse-slant  bg-{{ post.background }}"></div>
+                    <div class="item-slant"></div>
+                    <div class="item-label">
+                        <div class="item-title"><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a></div>
+                    </div>
+                </div>
+            </div>
+            {% endif %} {% endfor %} {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</div>

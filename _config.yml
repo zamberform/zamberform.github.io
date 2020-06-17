@@ -1,1 +1,45 @@
-theme: jekyll-theme-merlot
+# ----------- CONFIGURABLE START -----------
+title:            "サキキのFullStackの道"
+subtitle:         ""
+description:      "Full Stack Engineer"
+baseurl:          
+facebook_appid:   
+google_analytics: UA-115400557-1
+
+paginate: 8
+paginate_path: "/all/page:num/"
+plugins: [jekyll-paginate]
+links:
+  - name:         ホーム
+    url:          /
+    external:     false
+  - name:         全部
+    url:          /all
+    external:     false
+  - name:         タグ
+    url:          /tags
+    external:     false
+  - name:         About
+    url:          /about
+    external:     false
+  - name:         Rss
+    url:          /feed.xml
+    external:     false
+
+permalink: /:categories/:title.html
+defaults:
+  - values:
+      layout: "default"
+
+markdown: kramdown
+highlighter: rouge
+
+disqus:
+
+gitalk:
+  clientID: 77b23fbb355c5a394915 #Github Application Client ID
+  clientSecret: c4abf8e8921c809381c3d6fffbf5cdbffff51f72 #Github Application Client Secret
+  repository: https://github.com/zamberform/blog #Github repo
+  owner: zamberform #Github repo owner
+  admin:  #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
+    - zamberform
