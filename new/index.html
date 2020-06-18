@@ -14,9 +14,11 @@
                         </div>
                     </a>
                     <div class="item-info">
+                        {% for category in posts.category %}
                         <div class="item-category">
-                        <a class="btn btn-outline-primary" href="{{site.baseurl}}/tags#{{ posts.category }}" title="{{ posts.category }}" data-hover="{{ posts.category }}">{{ posts.category }}</a>
+                        <a class="btn btn-outline-primary" href="{{site.baseurl}}/tags#{{ category }}" title="{{ category }}" data-hover="{{ category }}">{{ category }}</a>
                         </div>
+                        {% endfor %}
                         <div class="item-readmore">
                             <a href="{{ posts.url | prepend: site.baseurl }}">{{ posts.date | date: "%F"}}</a>
                         </div>
