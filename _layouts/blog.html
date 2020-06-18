@@ -10,8 +10,8 @@
   </head>
 <body class="bg-grey" gtools_scp_screen_capture_injected="true">
 
-  <div id="content bg-grey">
-    <div class="article-content"> 
+<div id="content bg-grey">
+  <div class="article-content"> 
       <article class="main-content post-page" itemscope itemtype="http://schema.org/Article">
   <div class="post-header">
     <h1 class="post-title" itemprop="name headline">
@@ -30,30 +30,34 @@
 
   {% if site.disqus.shortname == nil and site.gitalk.clientID and site.gitalk.clientSecret and site.gitalk.repository and site.gitalk.owner and site.gitalk.admin and page.key %}
   <link rel="stylesheet" href="https://unpkg.com/gitalk@1.6.2/dist/gitalk.css">
-  <div id="js-gitalk-container"></div>
-  {% assign admin = '' %}
-  {% for adminId in site.gitalk.admin %}
-    {% assign admin = admin | append: ", '" | append: adminId | append: "'" %}
-  {% endfor %}
-  {% assign last = admin | size | minus: 1 %}
-  {% assign admin = admin | slice: 2, last %}
-  <script src="https://unpkg.com/gitalk@1.6.2/dist/gitalk.min.js"></script>
-  <script>
-    var gitalk = new Gitalk({
-      clientID: '{{ site.gitalk.clientID }}',
-      clientSecret: '{{ site.gitalk.clientSecret }}',
-      repo: '{{ site.gitalk.repository }}',
-      owner: '{{ site.gitalk.owner }}',
-      admin: [{{ admin }}],
-      id: '{{ page.key }}'
-    });
-    gitalk.render('js-gitalk-container');
-  </script>
+
+  <div style="background-color : #f0f8ff; border-radius: 1em;">
+    <div id="gitalk-container"></div>
+    {% assign admin = '' %}
+    {% for adminId in site.gitalk.admin %}
+      {% assign admin = admin | append: ", '" | append: adminId | append: "'" %}
+    {% endfor %}
+    {% assign last = admin | size | minus: 1 %}
+    {% assign admin = admin | slice: 2, last %}
+    <script src="https://unpkg.com/gitalk@1.6.2/dist/gitalk.min.js"></script>
+    <script>
+      var gitalk = new Gitalk({
+        clientID: '{{ site.gitalk.clientID }}',
+        clientSecret: '{{ site.gitalk.clientSecret }}',
+        repo: '{{ site.gitalk.repository }}',
+        owner: '{{ site.gitalk.owner }}',
+        admin: [{{ admin }}],
+        id: '{{ page.key }}'
+      });
+      gitalk.render('gitalk-container');
+    </script>
+  </div>
+  
 {% endif %}
 {% include advertisements.html %}
 </article>
 </div>
-  </div>
+</div>
 
 
 {% include foot.html %}
