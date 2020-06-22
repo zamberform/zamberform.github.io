@@ -11,7 +11,7 @@ key: "Flutter"
 
 # 背景
 
-去年の秋からFlutterでアプリを開発し始めた。
+去年の秋からFlutterでアプリ(iOS&Android)を開発し始めた。
 
 UIはFlutterのUIパーツでほぼできますが、どうしてもWebのページあって、あそこの部分はWebページを表現したいたりしますね。
 
@@ -46,6 +46,7 @@ Htmlのレンタリングはもちろん、
 JSの切り替えは`javascriptMode `で一発解決します。
 
 * コールバックイベント豊富です。
+
 ```
 　onWebViewCreated
 　navigationDelegate
@@ -88,7 +89,7 @@ Googleは政府機関に例えすると、こちらは民間機関の製品と�
 従来JS周りで、しつこいセキュリティ論はありますね。
 
 * `webview_flutter`:`javascriptMode `でコントロールできる、まだ、`javascriptChannels `で発火イベントを捉えるので、セキュリティー面は極めて低いと思います。
-* `flutter_webview_plugin `:同じく`withJavascript`でコントロールできますが、やはりjsのサポート面は大きいので、セキュリティ面は`webview_flutter `より低いです。ハイリスクと言えるほどではないです。
+* `flutter_webview_plugin `:同じく`withJavascript`でコントロールできますが、やはりjsのサポート面は大きいので、セキュリティ面は`webview_flutter `より低いです。ハイリスクと言えるほどではないです、どんどん使いましょう。
 
 
 ---
@@ -103,3 +104,5 @@ Googleは政府機関に例えすると、こちらは民間機関の製品と�
 関数などの衝突あるかと心配するかもしれないですが、こちらの検証として、両方のライブラリーは特に衝突なし利用できます。
 
 元々、dartはimportでパッケージを管理しているので、一緒にimportしても、名前つけると、ビルド時は名前は差し替えるので、特に心配しなくで大丈夫です。
+
+---
