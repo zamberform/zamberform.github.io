@@ -22,38 +22,38 @@ redirect_from:
 
 ### スキル
 1. コーデイング
-      * c++
+      * C++
       * Java/Kotlin
-      * c# 
+      * C# 
       * JavaScript
-      * swift
+      * Swift
       * Python
       * Shell
-      * perl
       * Golang 
+      * Dart
 
 2. ツール＆フレームワーク
       * Cocos2dx
       * Unity
       * Vertx
       * Spring
-      * Flask
+      * Gin/Beego
+      * Flask/Django
       * Jenkins
       * ReactNative
-      * Django
-      * Jekyll
       * Flutter
 
 3. プラートフォム
       * Android
       * iOS
+      * Web
       * Desktop
 
 4. DataBase&Caches
       * MySql
       * MangoDB
       * Realm
-      * Memcache
+      * Memcached
       * Redis
       
 5. CloudPlatform
