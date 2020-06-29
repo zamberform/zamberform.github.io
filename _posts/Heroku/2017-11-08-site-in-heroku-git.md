@@ -2,9 +2,9 @@
 layout: blog
 title:  "Herokuでサイトを公開"
 date:   2017-11-08
-category: Cloud
+category: Heroku
 istop: true
-key: "Cloud"
+key: "Heroku"
 
 ---
 

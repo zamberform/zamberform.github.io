@@ -2,10 +2,10 @@
 layout: blog
 title:  "主流になりすべき基盤フレーム"
 date:   2019-06-11
-category: Cloud
+category: AWS
 background-image: https://storage.googleapis.com/cdn.thenewstack.io/media/2018/06/5ccb7b6b-jani1.png
 istop: true
-key: "Cloud"
+key: "AWS"
 
 ---
 

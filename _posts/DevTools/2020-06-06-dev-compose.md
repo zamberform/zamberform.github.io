@@ -2,10 +2,10 @@
 layout: blog
 title:  "開発用docker-compose"
 date:   2020-06-06
-category: [Cloud, Tool]
+category: DevTools
 background-image: https://i1.wp.com/www.docker.com/blog/wp-content/uploads/2020/02/Compose.png?ssl=1
 istop: true
-key: "Cloud"
+key: "Tool,Docker Compose,Image,Container"
 
 ---
 

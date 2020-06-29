@@ -2,10 +2,10 @@
 layout: blog
 title:  "GCPのCloud Functionsお試し"
 date:   2019-02-06
-category: Cloud
+category: GCP
 background-image: https://cloud.google.com/images/functions/functions-video-thumbnail.png?hl=ja
 istop: true
-key: "Cloud"
+key: "GCP"
 
 ---
 

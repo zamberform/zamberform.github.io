@@ -2,10 +2,10 @@
 layout: blog
 title:  "GCPのお試し"
 date:   2018-05-28
-category: Cloud
+category: GCP
 background-image: https://redislabs.com/wp-content/images/partners/gcp.png
 istop: true
-key: "Cloud"
+key: "GCP"
 
 ---
 
