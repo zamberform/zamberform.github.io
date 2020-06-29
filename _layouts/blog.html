@@ -17,7 +17,7 @@
     <h1 class="post-title" itemprop="name headline">
       {{ page.title }}</h1>
     <div class="post-data">
-        <time datetime="{{ page.date | date: '%F %H:%M:%S'}}" itemprop="datePublished">{{ page.date | date: "%F %H:%M:%S"}}
+        <time datetime="{{ page.date | date: '%F'}}" itemprop="datePublished">{{ page.date | date: "%F"}}
         </time>
         {% if page.category %}
         <p class="text-right"><a href="{{site.baseurl}}/tags#{{ page.category }}" style="vertical-align: middle" class="btn btn-info" title="{{ page.category }}" data-hover="{{ page.category }}">{{ page.category }}</a></p>
