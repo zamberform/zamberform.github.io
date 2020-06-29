@@ -4,7 +4,7 @@ title:  "Jekyllの開発メモ"
 istop: true
 background-image: https://jekyllrb-ja.github.io/img/octojekyll.png
 date:   2015-12-02
-category: Jekyll
+category: Github
 
 ---
 

@@ -1,0 +1,127 @@
+---
+layout: blog
+title:  "Githubこんな機能あったとは"
+istop: true
+background-image: data:image/png;base64,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
+date:   2020-05-02
+category: Github
+
+---
+
+# 始め
+
+Githubは私たちエンジニアにとって、もう生活や仕事に欠かせない存在になっています。
+
+Githubはコードソースを管理するプラットフォームとして知られておりますが、多くの人は、ひたすら、コードを`git push/commit`だけで止まっていました、Githubで運営するとか、Githubを使って自分の仕事をもっと効率よくできることが考えていませんでした。
+
+自分も、今になって、Githubはこんな機能があるとはなんで早く使っていないだろうと後悔していました。
+
+---
+
+## Gist
+
+これは[ホームページ](https://gist.github.com/)がありました。
+
+主な機能として、コードを貼り付けることがどこでもできます。
+
+[ホームページ](https://gist.github.com/)でコードを書いて、生成してもらえると、このコードに対するユニックなUrlができます。
+
+そして、このUrlはどこでも貼り付けることができます。
+もちろんのこととして、Gitでコードを管理しているので、変更やコード共有とレビューに役に立ちます。
+
+---
+
+## ファイル
+
+今まで、ファイルを検索するときが、右上のサーチバーで行いましたが、
+Githubでは`Go to file`で素早くファイルを検索することができます。
+
+もし、私みたいにChromeの大ファンならば、
+
+[Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?hl=ja)はGithubの最適プラグインかと思います。
+
+まだ、
+
+各ソースのファイルサイズはGithubデフォルトとして表示しないですが、
+私は[Enhanced GitHub](https://chrome.google.com/webstore/detail/enhanced-github/anlikcnbgdeidpacdbdljnabclhahhmd)で見ています。
+
+---
+
+## Web
+	
+Jekyllみたいなブログ作れるので、もちろん、Staticのホームページや作ることができます。
+
+ただし、公開（Public）前提のことでした。
+
+---
+	
+## CI
+
+割と最近出たサービスです、`Github Actions`です。
+
+`Github Actions`を活用することによって、CIの仕事は完全にGithub内でできることになり、フロントもエンド側も安定、継続可能なコード運営できるようになります。
+
+初心者にも優しいです、[マーケット](https://github.com/marketplace?type=actions)には数々のサンプルありまして、今開発しているサービスの技術によって、テンプレートをコピペの形で、Github Actionsは設定完了することができます。
+
+楽ですね。
+
+## CLI
+
+エンジニアなので、コマンドはもちろんのことですね。
+
+DockerはCLIありますから、Githubは使ったことない印象でした。
+
+実はありました、[Github CLI](https://cli.github.com/)です。
+
+オフィシャルツールのため、すごく使いやすいです。
+
+ただし、最初は認証がありました、心配なく認証しましょう。
+
+* `gh`のコマンド名はgithubらしいと言うか、略称し過ぎる感じでした。
+
+## Submodules・Subtrees
+
+サービス開発中、基本的に非公開と思いますが。
+
+宣伝用とか、ドキュメントとかで公開したい場合、開発のRepoから分離して、公開専用の部分を作ればいいなとか考えたことがありました。
+
+この目的果たすために、Subのmodulesとtreesを使うのが最適ですね。
+
+- [submodule](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB)
+- [subtree](https://gist.github.com/kvnsmth/4688345)
+
+git submodule と git subtree は、外部リポジトリを自リポジトリでどのように扱うかの違うため、
+
+git submoduleはリンクみたいなイメージです。
+
+git subtreeは子Repoのコピです。
+
+---
+
+## MDテンプレート
+
+issuesはテンプレートを作れます、MDのフォーマットもできるため、
+
+他の人がissueを作る時が、テンプレートを自動的に反映することができます。
+
+設定場所：`.github/ISSUE_TEMPLATE.md`
+
+まだ、`Github wiki`とか、`pull request`もMDファイルですので、何より、MDの書式マスターすれば、色々共有したり、管理することがやりやすいですね。
+
+---
+
+## issueクローズ自動キーワード
+
+issueはコミットの文言によって、自動的にクローズすることになります。
+
+- close
+- closes
+- closed
+- fix
+- fixes
+- fixed
+- resolve
+- resolves
+- resolved
+
+例えば、`git push -m "fixes #111"`で111番のissueが自動的にクローズされます。
